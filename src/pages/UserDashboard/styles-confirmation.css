@@ -1,0 +1,142 @@
+/* styles.css */
+
+body {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    direction: rtl; /* يجعل النص من اليمين إلى اليسار للغة العربية */
+    background-color: #f0f0f0; /* لون خلفية الصفحة */
+    margin: 0;
+    padding: 0;
+    background-image: url('img/Conf-image.jpeg'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: right; /* محاذاة النص إلى اليمين */
+}
+
+h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* styles-confirmation.css */
+
+#reservation-details {
+    margin-top: 20px;
+}
+
+#reservation-details p {
+    margin-bottom: 10px;
+}
+
+#reservation-details span {
+    font-weight: bold;
+    color: #333;
+}
+
+.container a {
+    margin-top: 20px;
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.container a:first-child {
+    margin-right: 10px;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    /* background-color: #2980b9;  */
+    color: white; /* لون النص */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+    margin-top: 50px;
+
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    right: 90px;
+}
+
+li a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+li a:hover {
+    background-color: #3498db; /* لون الخلفية عند التمرير */
+}
+
+.icons a {
+    margin-left: 15px; /* المسافة بين الأيقونات */
+}
+
+@media (max-width: 768px) {
+    /* تكييف للأجهزة اللوحية والهواتف */
+    .container {
+        padding: 10px;
+        margin-right: 30px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    ul {
+        margin-right: 0;
+        margin-top: -10px; /* تعديل المسافة من الأعلى */
+    }
+
+    li {
+        margin-bottom: 10px; /* تعديل المسافة بين الروابط في النسخة الصغيرة */
+    }
+
+    li a {
+        padding: 5px 10px; /* تعديل حجم الروابط في النسخة الصغيرة */
+    }
+}
+
+

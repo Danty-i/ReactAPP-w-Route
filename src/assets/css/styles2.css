@@ -1,0 +1,134 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0; 
+}
+
+
+.sidebar {
+  width: 250px;
+  background-color: #5da9e9;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  height: 100%;
+}
+.carousel-item img {
+  width: 100vw;
+  height: auto;
+}
+
+
+.sidebar h2 {
+  margin: 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid white;
+}
+
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  direction: rtl;
+}
+.navbar-brand {
+  position: relative;
+}
+
+.logo img {
+    height: 60px;
+    border-radius: 25px;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+  }
+
+nav ul li {
+  margin: 20px 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px 0;
+}
+
+nav ul li a:hover {
+  background-color: #4a90e2;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #f4f4f9;
+  margin-right: 250px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form label {
+  font-size: 14px;
+}
+
+form input, form select, form button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #5da9e9;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #4a90e2;
+}
+
+
+@media (max-width: 768px) {
+  .logo {
+      display: none;
+  }
+
+  .clean-block.clean-hero p{
+    margin-top: 30px;
+  }
+
+  .navbar>.container{
+    direction: rtl;
+  }
+  .feature-box .icon {
+    left: 280px;
+}
+}
+
+@media (max-width: 992px) {
+  .logo {
+    display: none;
+}
+.navbar>.container{
+  direction: rtl;
+}
+} 
+
